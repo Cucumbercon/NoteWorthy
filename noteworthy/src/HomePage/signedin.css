@@ -37,6 +37,7 @@ body {
 .navbar .nav-links {
     list-style: none;
     margin: 0;
+    margin-right: 2rem;
     padding: 0;
     display: flex;
 }
@@ -89,29 +90,19 @@ body {
 }
 
 /***** Email signup and submit *****/
-form {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
-input[type="email"] {
-	padding: 10px;
-	border-radius: 5px;
-	border: 1px solid lightgrey;
-	flex-grow: 1;
-    text-align: center;
-    margin-right: .5em;
-    font-family: 'Outfit';
-    font-weight: 300;
-}
-button[type="submit"] {
-	padding: 13px 20px;
+
+button {
+	padding: 15px 20px;
     border-radius: 5px;
+    width: 150px;
     border: none;
 	background-color: #87C159;
-	color: white;
     font-family: 'Outfit';
-    font-weight: 500;
+    font-weight: 600;
+    font-size: small;
     letter-spacing: 1px;
-    font-size: x-small;
+}
+button a {
+    color: white;
+    text-decoration: none;
 }
