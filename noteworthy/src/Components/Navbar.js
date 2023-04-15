@@ -1,14 +1,23 @@
-export default function Navbar() {
-return <nav className = "nav">
-    <a href = "/" className= "site-title">NoteWorthy</a>
-    <ul>
-        <li>
-            <a href = "/logout">Logout</a>
-            </li>
-            <li>
-            <a href = "/user">User</a>
-        </li>
-    </ul>
-</nav>
+import React from "react";
+import myImage from './logo.png'
 
+export default function Navbar() {
+  return (
+    <nav className="nav">
+      <a href="/" className="site-title">NoteWorthy</a>
+
+      <div>
+      <img src={require('./logo.png')} alt="My Image" height ="50px" />
+    </div>
+
+      <ul>
+        <li>
+          <a href="/logout">Logout</a>
+        </li>
+        <li>
+          <a href="/username">Username</a>
+        </li>
+      </ul>
+    </nav>
+  );
 }

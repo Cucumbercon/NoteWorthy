@@ -1,15 +1,34 @@
+
+
 .nav {
     background-color: #333;
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     gap: 2rem;
     padding: 0 1rem;
+    height: 75px;
+    
   }
   
-  .site title{
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    font-family: 'Outfit';
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+.navbar .logo img {
+  height: 30px;
+  padding-right: 3px;
+}
+  .site-title{
     font-size: 2rem;
+    
   }
   
   .nav ul{
@@ -18,6 +37,7 @@
     list-style: none;
     display: flex;
     gap: 1rem;
+    align-items: center;
   }
   
   .nav a {
@@ -34,5 +54,4 @@
   .nav li.hover {
     background-color: #777;
   }
-  
   
