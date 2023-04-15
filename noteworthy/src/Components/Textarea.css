@@ -1,0 +1,19 @@
+.textarea {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 60vh;
+    margin-top: 40px;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ff3a3a;
+  }
+  
+  
+  .textarea:focus {
+    outline: none;
+    border-color: #4d90fe;
+    box-shadow: 0 0 0 3px rgba(77, 144, 254, 0.3);
+  }

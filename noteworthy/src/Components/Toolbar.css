@@ -1,0 +1,24 @@
+.toolbar {
+    width: 100%;
+    background-color: #333;
+    border: 1px solid #cccccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .toolbar button {
+    background-color:#d80000;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  .toolbar button:hover {
+    background-color: #d80000;
+  }
+  
+  .toolbar button i {
+    font-size: 16px;
+    color: #333333;
+  }
