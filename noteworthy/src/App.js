@@ -1,6 +1,11 @@
 // App.js
 
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import React, { useState } from 'react';
+import Home from './item-components/Home';
+import Login from './item-components/Login';
+import Signup from './item-components/Signup';
+import ErrorPage from './item-components/ErrorPage';
 import Textarea from './Components/Textarea';
 import Toolbar from './Components/Toolbar';
 import Button from './Components/Button';
@@ -35,7 +40,16 @@ function App() {
 
   return (
     
-    <div><Navbar />
+    <div>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<Signup />} />
+          <Route path='*' element={<ErrorPage />} />
+        </Routes>
+      </Router>
+      <Navbar />
       <div className='Toolbar'><Toolbar onUndo={handleUndo} onRedo={handleRedo} onFormatClick={handleFormatClick}/></div>
       <div className = 'Textarea'><Textarea value={content} onChange={handleChange} /></div>
       <Button onClick={handleSave} label="Save" />
