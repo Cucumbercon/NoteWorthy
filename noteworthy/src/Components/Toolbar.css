@@ -1,24 +1,38 @@
 .toolbar {
-    width: 100%;
-    background-color: #333;
-    border: 1px solid #cccccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    padding: 10px;
+    background-color: #b1b1b1;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
   }
   
   .toolbar button {
-    background-color:#d80000;
-    border: none;
-    margin-right: 10px;
+    background-color: #b1b1b1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 5px 10px;
   }
   
-  .toolbar button:hover {
-    background-color: #d80000;
+  .toolbar select {
+    appearance: none;
+    background-color: #b1b1b1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 5px 10px;
   }
   
-  .toolbar button i {
-    font-size: 16px;
-    color: #333333;
+  .toolbar select:focus {
+    outline: none;
+    border-color: #007aff;
   }
+  
+  .toolbar option {
+    color: #333;
+    font-weight: bold;
+  }
+  

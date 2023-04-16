@@ -4,7 +4,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './editor.css';
 import './Components/Navbar.css'
-import './Components/Toolbar.css'
 import  './Components/Textarea.css'
 
 

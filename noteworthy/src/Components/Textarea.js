@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Textarea.css';
 
-
 function Textarea() {
   const [content, setContent] = useState('');
 
@@ -10,11 +9,18 @@ function Textarea() {
   }
 
   return (
-    <textarea
-      value={content}
-      onChange={handleChange}
-      placeholder="Untitled..."
-    />
+    <div className="page">
+      <div className="header">
+      </div>
+      <div className="textarea-container">
+        <textarea
+          className="textarea"
+          value={content}
+          onChange={handleChange}
+          placeholder="Untitled..."
+        />
+      </div>
+    </div>
   );
 }
 

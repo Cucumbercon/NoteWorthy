@@ -13,7 +13,6 @@ import './editor.css';
 import Navbar from './Components/Navbar';
 import './Components/Navbar.css'
 import './Components/Textarea.css'
-import './Components/Toolbar.css'
 
 function App() {
   const [content, setContent] = useState('');
@@ -52,7 +51,7 @@ function App() {
       <Navbar />
       <div className='Toolbar'><Toolbar onUndo={handleUndo} onRedo={handleRedo} onFormatClick={handleFormatClick}/></div>
       <div className = 'Textarea'><Textarea value={content} onChange={handleChange} /></div>
-      <Button onClick={handleSave} label="Save" />
+      <div className='Button'><Button onClick={handleSave} label="Save" /></div>
     </div>
     
 
