@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import styles from './Login.module.css';
 
 import { useNavigate } from 'react-router-dom';
 
 const Login = (props) => {
+/*
   // Define the state with useState hook
   const navigate = useNavigate();
   const [item, setItem] = useState({
@@ -34,51 +36,40 @@ const Login = (props) => {
         console.log('Error in Login!');
       });
   };
-
+*/
   return (
-    <div className='Login'>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-md-8 m-auto'>
+    <div className={styles.Login}>
+      <div className={styles.container}>
+        <div className={styles.row}>
+          <div className={"styles.col-md-8 m-auto"}>
             <br />
             <Link to='/'>Home</Link>
             <br></br>
             <Link to='/Signup'>Sign Up</Link>
           </div>
-          <div className='col-md-8 m-auto'>
-            <h1>Login</h1>
-            <form noValidate onSubmit={onSubmit}>
-              <div className='form-group'>
-                <h3>Username:</h3>
-                <input
-                  type='text'
-                  placeholder='Username'
-                  name='uName'
-                  className='form-control'
-                  value={item.uName}
-                  onChange={onChange}
-                />
-              </div>
-              <br />
-
-              <div className='form-group'>
-                <h3>Password:</h3>
-                <input
-                  type='text'
-                  placeholder='Password'
-                  name='psw'
-                  className='form-control'
-                  value={item.psw}
-                  onChange={onChange}
-                />
-              </div>
-
-              <input type='submit'/>
-            </form>
+          <div class={styles.container}>
+            <div class={styles.card}>
+       <div class={styles.centeredimg}><img src={require("../images/logo.png")} alt="Logo"></img></div>
+        <h1>Login</h1>
+        <form action="#" method="post">
+          <div class = {styles.inputText}>
+            <label for="username">Username:</label>
+            <input class type="text" id="username" name="username"></input>
+          </div>
+          <div class = {styles.inputText}>
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password"></input>
+          </div>
+          <div>
+            <input class = {styles.submit} type="submit" value="LOGIN"></input>
+          </div>
+        </form>
+      </div>
+    </div>
+          
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
