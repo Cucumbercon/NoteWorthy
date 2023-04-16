@@ -9,6 +9,7 @@ import ErrorPage from './item-components/ErrorPage';
 import Textarea from './Components/Textarea';
 import Toolbar from './Components/Toolbar';
 import Button from './Components/Button';
+import Texteditor from './item-components/Texteditor'
 import './editor.css';
 import Navbar from './Components/Navbar';
 import './Components/Navbar.css'
@@ -40,6 +41,7 @@ function App() {
   return (
     
     <div>
+      
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
@@ -48,6 +50,7 @@ function App() {
           <Route path='*' element={<ErrorPage />} />
         </Routes>
       </Router>
+      
       <Navbar />
       <div className='Toolbar'><Toolbar onUndo={handleUndo} onRedo={handleRedo} onFormatClick={handleFormatClick}/></div>
       <div className = 'Textarea'><Textarea value={content} onChange={handleChange} /></div>
