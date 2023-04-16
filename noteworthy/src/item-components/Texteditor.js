@@ -1,17 +1,27 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+
+import React, { useState } from 'react';
+
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Toolbar from '../Components/Toolbar';
 import Textarea from '../Components/Textarea';
 import Button from '../Components/Button';
 import Navbar from '../Components/Navbar';
 
+
 function Editor() {
+
+  const [content, setContent] = useState('');
+
   function handleUndo() {
-    // code to undo changes
+    // code to undo the last action
   }
 
   function handleRedo() {
-    // code to redo changes
+    // code to redo the last action
+  }
+
+  function handleSave() {
+    // code to save the content
   }
 
   function handleFormatClick(format) {
@@ -19,8 +29,9 @@ function Editor() {
   }
 
   function handleChange(event) {
-    // code to handle changes in the textarea
+    setContent(event.target.value);
   }
+  
 
   return (
     <><Navbar />
@@ -33,6 +44,6 @@ function Editor() {
           <Button label="Save" />
       </div></>
   );
-}
+  }
 
 export default Editor;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-
+import styles from './Signup.module.css'
 import { useNavigate } from 'react-router-dom';
 
 const Signup = (props) => {
@@ -38,61 +38,38 @@ const Signup = (props) => {
   };
 
   return (
-    <div className='SignUp'>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-md-8 m-auto'>
-            <br/>
-            <Link to='/'>Home</Link>
-            <br></br>
-            <Link to='/login'>Login</Link>
+    <div className={styles.Signup}>
+    <div className={styles.container}>
+      <div className={styles.row}>
+        <div className={"styles.col-md-8 m-auto"}>
+          <br />
+          <Link to='/'>Home</Link>
+          <br></br>
+          <Link to='/Login'>Login</Link>
+        </div>
+          <div class={styles.container}>
+            <div class={styles.card}>
+       <div class={styles.centeredimg}><img src={require("../images/logo.png")} alt="Logo"></img></div>
+        <h1>Sign Up</h1>
+        <div class = {styles.inputText}>
+            <label for="email">Email:</label>
+            <input class type="text" id="email" name="email"></input>
           </div>
-          <div className='col-md-8 m-auto'>
-            <h1>Sign Up</h1>
-            
-            <form noValidate onSubmit={onSubmit}>
-              <div className='form-group'>
-                <h3>Full Name</h3>
-                <input
-                  type='text'
-                  placeholder='Full Name'
-                  name='fName'
-                  className='form-control'
-                  value={item.fullName}
-                  onChange={onChange}
-                />
-              </div>
-              <br />
-
-              <div className='form-group'>
-                <h3>Username:</h3>
-                <input
-                  type='text'
-                  placeholder='Username'
-                  name='uName'
-                  className='form-control'
-                  value={item.userName}
-                  onChange={onChange}
-                />
-              </div>
-              <div className='form-group'>
-                <h3>Password:</h3>
-                <input
-                  type='text'
-                  placeholder='Password'
-                  name='psw'
-                  className='form-control'
-                  value={item.password}
-                  onChange={onChange}
-                />
-              </div>
-
-              <input
-                type='submit'
-                className='btn btn-outline-warning btn-block mt-4'
-              />
-            </form>
+        <form action="#" method="post">
+          <div class = {styles.inputText}>
+            <label for="username">Username:</label>
+            <input class type="text" id="username" name="username"></input>
           </div>
+          <div class = {styles.inputText}>
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password"></input>
+          </div>
+          <div>
+            <input class = {styles.submit} type="submit" value="LOGIN"></input>
+          </div>
+        </form>
+      </div>
+    </div>
         </div>
       </div>
     </div>

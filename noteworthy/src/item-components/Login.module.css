@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.centeredimg {
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    margin-top: -50px;
+}
+.container {
+    background-color: #DCE8C2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100vh;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background: rgba(255, 255, 255, 0.3);
+    height: 250px;
+    width: 400px;
+    padding: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 2px solid #87C159;
+    border-radius: 7px;
+    font-family: 'Outfit';
+    font-weight: 300;
+}
+.textarea {
+    width: 100%;
+    padding: 7px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.inputText {
+    width: 100%;
+    padding: 7px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.submit{
+    padding: 11px 20px;
+    border-radius: 5px;
+    border: none;
+	background-color: #87C159;
+	color: white;
+    font-family: 'Outfit';
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: x-small;
+}
