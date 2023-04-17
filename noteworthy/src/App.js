@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import Home from './item-components/Home';
 import Login from './item-components/Login';
 import Signup from './item-components/Signup';
+import Signedin from './item-components/Signedin';
 import ErrorPage from './item-components/ErrorPage';
 import Textarea from './Components/Textarea';
 import Toolbar from './Components/Toolbar';
@@ -25,6 +26,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
+          <Route path='/signedin' element={<Signedin />} />
           <Route path = '/Texteditor' element={<Texteditor />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>

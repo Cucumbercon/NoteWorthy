@@ -65,7 +65,8 @@ const Signup = (props) => {
             <input type="text" id="password" name="password"></input>
           </div>
           <div>
-            <input class = {styles.submit} type="submit" value="LOGIN"></input>
+            <input class = {styles.submit} type="submit" value="SIGN UP"></input>
+            
           </div>
         </form>
       </div>

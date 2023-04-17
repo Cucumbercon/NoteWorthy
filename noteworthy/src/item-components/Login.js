@@ -62,6 +62,7 @@ const Login = (props) => {
           </div>
           <div>
             <input class = {styles.submit} type="submit" value="LOGIN"></input>
+            <Link to='/signedin'>Signedin</Link>
           </div>
         </form>
       </div>
