@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import styles from './Signup.module.css'
+import styles from './Signup.module.css';
 import { useNavigate } from 'react-router-dom';
 
 const Signup = (props) => {
-  // Define the state with useState hook
   const navigate = useNavigate();
   const [item, setItem] = useState({
     fullName: '',
@@ -28,8 +27,7 @@ const Signup = (props) => {
           userName: '',
           password: '',
         });
-
-        // Push to /
+        //Push to
         navigate('/');
       })
       .catch((err) => {
@@ -38,39 +36,35 @@ const Signup = (props) => {
   };
 
   return (
-    <div className={styles.Signup}>
-    <div className={styles.container}>
-      <div className={styles.row}>
-        <div className={"styles.col-md-8 m-auto"}>
-          <br />
-          <Link to='/'>Home</Link>
-          <br></br>
-          <Link to='/Login'>Login</Link>
+    <div>
+      <nav className={styles.navbar}>
+        <div className={styles.container}>
+          <div className={styles.logo}>
+            <img src={require("../images/logo.png")} alt="Logo"></img>
+            <a className={styles.logo} href="/">NoteWorthy</a>
+          </div>
+          <ul className={styles.navlinks}>
+            <li className={styles.li}><a className={styles.a} href="/Login">Login</a></li>
+          </ul>
         </div>
-          <div class={styles.container}>
-            <div class={styles.card}>
-       <div class={styles.centeredimg}><img src={require("../images/logo.png")} alt="Logo"></img></div>
-        <h1>Sign Up</h1>
-        <div class = {styles.inputText}>
-            <label for="email">Email:</label>
-            <input class type="text" id="email" name="email"></input>
+      </nav>
+      <div className={styles.background}>
+        <div className={styles.cardcontainer}>
+          <div className={styles.card}>
+            <div className={styles.centeredimg}><img src={require("../images/logo.png")} alt="Logo"></img></div>
+            <h1>Sign Up</h1>
+            <div className={styles.formcontainer}>
+              <form onSubmit={onSubmit}>
+                <label htmlFor="username">Username:</label>
+                <input type="text" id="username" name="userName" className={styles.textinput} onChange={onChange} value={item.userName}></input>
+                <label htmlFor="password">Password:</label>
+                <input type="password" id="password" name="password" className={styles.textinput} onChange={onChange} value={item.password}></input>
+                <label htmlFor="email">Email:</label>
+                <input type="email" id="email" name="email" className={styles.textinput} onChange={onChange} value={item.email}></input>
+                <input type="submit" value="SUBMIT" className={styles.submitbutton}></input>
+              </form>
+            </div>
           </div>
-        <form action="#" method="post">
-          <div class = {styles.inputText}>
-            <label for="username">Username:</label>
-            <input class type="text" id="username" name="username"></input>
-          </div>
-          <div class = {styles.inputText}>
-            <label for="password">Password:</label>
-            <input type="text" id="password" name="password"></input>
-          </div>
-          <div>
-            <input class = {styles.submit} type="submit" value="SIGN UP"></input>
-            
-          </div>
-        </form>
-      </div>
-    </div>
         </div>
       </div>
     </div>

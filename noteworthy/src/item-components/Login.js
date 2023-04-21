@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import styles from './Login.module.css';
-
 import { useNavigate } from 'react-router-dom';
 
 const Login = (props) => {
-/*
   // Define the state with useState hook
   const navigate = useNavigate();
   const [item, setItem] = useState({
@@ -20,15 +18,13 @@ const Login = (props) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-
     axios
       .post('http://localhost:8082/api/items', item)
       .then((res) => {
         setItem({
-            uName: '',
-            psw: '',
+          uName: '',
+          psw: '',
         });
-
         // Push to /
         navigate('/');
       })
@@ -36,41 +32,61 @@ const Login = (props) => {
         console.log('Error in Login!');
       });
   };
-*/
+
   return (
-    <div className={styles.Login}>
-      <div className={styles.container}>
-        <div className={styles.row}>
-          <div className={"styles.col-md-8 m-auto"}>
-            <br />
-            <Link to='/'>Home</Link>
-            <br></br>
-            <Link to='/Signup'>Sign Up</Link>
+    <div>
+      <nav className={styles.navbar}>
+        <div className={styles.container}>
+          <div className={styles.logo}>
+            <img src={require("../images/logo.png")} alt="Logo"></img>
+            <a className={styles.logo} href="/">NoteWorthy</a>
           </div>
-          <div class={styles.container}>
-            <div class={styles.card}>
-       <div class={styles.centeredimg}><img src={require("../images/logo.png")} alt="Logo"></img></div>
-        <h1>Login</h1>
-        <form action="#" method="post">
-          <div class = {styles.inputText}>
-            <label for="username">Username:</label>
-            <input class type="text" id="username" name="username"></input>
-          </div>
-          <div class = {styles.inputText}>
-            <label for="password">Password:</label>
-            <input type="text" id="password" name="password"></input>
-          </div>
-          <div>
-            <input class = {styles.submit} type="submit" value="LOGIN"></input>
-            <Link to='/signedin'>Signedin</Link>
-          </div>
-        </form>
-      </div>
-    </div>
-          
+          <ul className={styles.navlinks}>
+            <li className={styles.li}>
+              <a className={styles.a} href="/Signup">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div className={styles.background}>
+        <div className={styles.cardcontainer}>
+          <div className={styles.card}>
+            <div className={styles.centeredimg}>
+              <img src={require("../images/logo.png")} alt="Logo"></img>
+            </div>
+            <h1>Login</h1>
+            <div className={styles.formcontainer}>
+              <form action="#" method="post">
+                <label htmlFor="username">Username:</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="uName"
+                  className={styles.textinput}
+                  onChange={onChange}
+                  value={item.uName}
+                />
+                <label htmlFor="password">Password:</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="psw"
+                  className={styles.textinput}
+                  onChange={onChange}
+                  value={item.psw}
+                />
+                <input
+                  type="submit"
+                  value="LOGIN"
+                  className={styles.submitbutton}
+                  onClick={onSubmit}
+                />
+              </form>
+            </div>
           </div>
         </div>
       </div>
+    </div>
   );
 };
 

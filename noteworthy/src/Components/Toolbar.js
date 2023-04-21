@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import './toolbar.css';
+import './Toolbar.css';
 
 
 function Toolbar(props) {

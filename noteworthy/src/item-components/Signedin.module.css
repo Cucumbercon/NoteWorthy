@@ -34,20 +34,20 @@ body {
     height: 30px;
     padding-right: 3px;
 }
-.navbar .nav-links {
+.navbar .navlinks {
     list-style: none;
     margin: 0;
     margin-right: 2rem;
     padding: 0;
     display: flex;
 }
-.navbar .nav-links li {
+.navbar .navlinks li {
     margin-left: 1rem;
 }
-.navbar .nav-links li:first-child {
+.navbar .navlinks li:first-child {
     margin-left: 0;
 }
-.navbar .nav-links li a {
+.navbar .navlinks li a {
     color: black;
     font-family: 'Outfit';
     font-weight: 500;
@@ -89,20 +89,26 @@ body {
     text-align: left;
 }
 
-/***** Email signup and submit *****/
+/***** New Note **************/
 
-button {
+.notebuttoncontainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.notebutton {
 	padding: 15px 20px;
     border-radius: 5px;
     width: 150px;
     border: none;
-	background-color: #87C159;
+	background-color: #74bc39;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
     font-family: 'Outfit';
-    font-weight: 600;
+    font-weight: 500;
     font-size: small;
     letter-spacing: 1px;
-}
-button a {
     color: white;
-    text-decoration: none;
+}
+.notebutton:hover {
+    background-color: #87C159;
 }

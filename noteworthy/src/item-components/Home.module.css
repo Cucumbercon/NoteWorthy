@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Roboto:wght@400&display=swap');
 
 body {
     margin: 0;
@@ -36,19 +36,19 @@ body {
     height: 30px;
     padding-right: 3px;
 }
-.navbar .nav-links {
+.navbar .navlinks {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
-.navbar .nav-links li {
+.navbar .navlinks li {
     margin-left: 1rem;
 }
-.navbar .nav-links li:first-child {
+.navbar .navlinks li:first-child {
     margin-left: 0;
 }
-.navbar .nav-links li a {
+.navbar .navlinks li a {
     color: black;
     font-family: 'Outfit';
     font-weight: 500;
@@ -80,12 +80,12 @@ body {
 .heading h1 {
     font-family: 'Outfit';
     font-size: 80px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 .heading p {
     font-family: 'Roboto';
     font-size: 20px;
-    margin-top: 0;
+    margin-top: 0px;
     margin-left: 6px;
     text-align: left;
 }
@@ -96,6 +96,7 @@ form {
 	flex-direction: row;
 	align-items: center;
 }
+
 input[type="email"] {
 	padding: 10px;
 	border-radius: 5px;
@@ -106,14 +107,18 @@ input[type="email"] {
     font-family: 'Outfit';
     font-weight: 300;
 }
-button[type="submit"] {
+.signupbutton {
 	padding: 13px 20px;
     border-radius: 5px;
     border: none;
-	background-color: #87C159;
+	background-color: #74bc39;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 	color: white;
     font-family: 'Outfit';
     font-weight: 500;
     letter-spacing: 1px;
     font-size: x-small;
+}
+.signupbutton:hover {
+    background-color: #87C159;
 }
