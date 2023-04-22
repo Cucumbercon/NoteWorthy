@@ -5,6 +5,7 @@
     background-color: #b1b1b1;
     border-bottom: 1px solid #ccc;
     padding: 5px;
+    border-radius: 0px 0px 10px 10px;
   }
   
   .toolbar button {
@@ -24,11 +25,12 @@
     cursor: pointer;
     margin-right: 5px;
     padding: 5px 10px;
+    font-family: 'Outfit';
   }
   
   .toolbar select:focus {
     outline: none;
-    border-color: #007aff;
+    border-color: #8ff939;
   }
   
   .toolbar option {

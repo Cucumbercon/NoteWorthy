@@ -97,7 +97,7 @@ form {
 	align-items: center;
 }
 
-input[type="email"] {
+/*input[type="email"] {
 	padding: 10px;
 	border-radius: 5px;
 	border: 1px solid lightgrey;
@@ -107,7 +107,8 @@ input[type="email"] {
     font-family: 'Outfit';
     font-weight: 300;
 }
-.signupbutton {
+*/
+.loginbutton {
 	padding: 13px 20px;
     border-radius: 5px;
     border: none;
@@ -117,7 +118,7 @@ input[type="email"] {
     font-family: 'Outfit';
     font-weight: 500;
     letter-spacing: 1px;
-    font-size: x-small;
+    font-size: 11px;
     width: 25%;
 }
 .signupbutton:hover {
