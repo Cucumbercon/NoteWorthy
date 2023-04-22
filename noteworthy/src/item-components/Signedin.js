@@ -7,23 +7,23 @@ import { useNavigate } from 'react-router-dom';
 const Signedin = () => {
   return (
     <div>
-      <nav class={styles.navbar}>
-        <div class={styles.container}>
-          <div class={styles.logo}>
+      <nav className={styles.navbar}>
+        <div className={styles.container}>
+          <div className={styles.logo}>
             <img src={require("../images/logo.png")} alt="Logo" />
-            <a class={styles.logo} href="/">NoteWorthy</a>
+            <a className={styles.logo} href="/">NoteWorthy</a>
           </div>
-          <ul class={styles.navlinks}>
-            <li class={styles.li}><a class={styles.a} href="/">Logout</a></li>
+          <ul className={styles.navlinks}>
+            <li className={styles.li}><a className={styles.a} href="/">Logout</a></li>
           </ul>
         </div>
       </nav>
-      <div class={styles.homepage}>
-        <div class={styles.heading}>
+      <div className={styles.homepage}>
+        <div className={styles.heading}>
           <h1>NoteWorthy</h1>
           <p>take note-taking to new heights</p>
-          <div class={styles.notebuttoncontainer}>
-            <Link to='/Texteditor'><input type="submit" value="NEW NOTE" class={styles.notebutton} /></Link>
+          <div className={styles.notebuttoncontainer}>
+            <Link to='/Texteditor'><input type="submit" value="NEW NOTE" className={styles.notebutton} /></Link>
           </div>
         </div>
         <img src={require('../images/signedin.png')} alt="Laptop" width="350" height="auto" />
