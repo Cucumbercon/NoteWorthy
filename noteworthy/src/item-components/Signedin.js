@@ -23,7 +23,7 @@ const Signedin = () => {
           <h1>NoteWorthy</h1>
           <p>take note-taking to new heights</p>
           <div className={styles.notebuttoncontainer}>
-            <Link to='/Texteditor'><input type="submit" value="NEW NOTE" className={styles.notebutton} /></Link>
+            <Link to='/TextEdit'><input type="submit" value="NEW NOTE" className={styles.notebutton} /></Link>
           </div>
         </div>
         <img src={require('../images/signedin.png')} alt="Laptop" width="350" height="auto" />

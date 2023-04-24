@@ -1,12 +1,6 @@
-import React, { useState } from 'react';
 import './Textarea.css';
 
-function Textarea() {
-  const [content, setContent] = useState('');
-
-  function handleChange(event) {
-    setContent(event.target.value);
-  }
+function Textarea(props) {
 
   return (
     <div className="page">
@@ -15,8 +9,8 @@ function Textarea() {
       <div className="textarea-container">
         <textarea
           className="textarea"
-          value={content}
-          onChange={handleChange}
+          value={props.text}
+          onChange={props.onChange}
           placeholder="Untitled..."
         />
       </div>

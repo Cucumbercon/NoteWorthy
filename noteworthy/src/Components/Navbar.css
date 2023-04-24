@@ -1,5 +1,5 @@
 .nav {
-    background-color: #333;
+    background-color: #e4ebd6;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -17,7 +17,7 @@
     font-family: 'Outfit';
     font-size: 1rem;
     font-weight: 500;
-    color: black;
+    color: rgb(153, 63, 63);
     text-decoration: none;
 }
 .navbar .logo img {
@@ -39,13 +39,14 @@
   }
   
   .nav a {
-    color: inherit;
+    color: black;
     text-decoration: none;
     align-items: center;
   
   }
   
   .nav li.active {
+    color: black;
     background-color: #555;
   }
   
