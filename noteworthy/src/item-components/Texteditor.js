@@ -12,7 +12,7 @@ const TOOLBAR_OPTIONS = [
   [{ color: [] }, {background: [] }],
   [{ script: "sub"}, { script: "super"}],
   [{ align: []}],
-  ["image", "blockquote", "code-block"],
+  ["image",],
   ["clean"],
 
 ]
