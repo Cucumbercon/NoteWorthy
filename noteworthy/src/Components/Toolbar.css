@@ -1,0 +1,39 @@
+.toolbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #b1b1b1;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.toolbar button {
+  background-color: #b1b1b1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+
+.toolbar select {
+  appearance: none;
+  background-color: #b1b1b1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-family: 'Outfit';
+}
+
+.toolbar select:focus {
+  outline: none;
+  border-color: #8ff939;
+}
+
+.toolbar option {
+  color: #333;
+  font-weight: bold;
+}

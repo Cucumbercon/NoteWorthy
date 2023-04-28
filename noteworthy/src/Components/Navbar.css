@@ -1,0 +1,55 @@
+.nav {
+  background-color: #e4ebd6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+  height: 75px;
+  
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  font-family: 'Outfit';
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(153, 63, 63);
+  text-decoration: none;
+}
+.navbar .logo img {
+height: 30px;
+padding-right: 3px;
+}
+.site-title{
+  font-size: 2rem;
+  
+}
+
+.nav ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  align-items: center;
+
+}
+
+.nav li.active {
+  color: black;
+  background-color: #555;
+}
+
+.nav li.hover {
+  background-color: #777;
+}
